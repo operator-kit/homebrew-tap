@@ -10,7 +10,7 @@ class Ghapp < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/operator-kit/ghapp-cli/releases/download/v0.1.1/ghapp_0.1.1_darwin_amd64.tar.gz"
-      sha256 "1a60d830bc1c430a8ca7e91ed8ecf5493f053ca7524023ef8cf020cb8335170e"
+      sha256 "fec26c911edd54d9500a4206471dd12cd7bde010e323485d05f9dfbd02dd1522"
 
       define_method(:install) do
         bin.install "ghapp"
@@ -19,7 +19,7 @@ class Ghapp < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/operator-kit/ghapp-cli/releases/download/v0.1.1/ghapp_0.1.1_darwin_arm64.tar.gz"
-      sha256 "c6ff2a80c9b477cc910e842d855b64245a23f5fa36fab7e26d785ccb1680034c"
+      sha256 "1916cc95a61bb28b11f4a1425867c7c4568687bded15995577004305e0d688ba"
 
       define_method(:install) do
         bin.install "ghapp"
@@ -31,7 +31,7 @@ class Ghapp < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/operator-kit/ghapp-cli/releases/download/v0.1.1/ghapp_0.1.1_linux_amd64.tar.gz"
-      sha256 "b4bb540bed6a8814a8c43c16cf614c2675067fc94fe2f7ef08c1a654e4c00514"
+      sha256 "7fb62fa0882b1aad46b3ffca23b99d2e4ab4364dbcb57d347c1c8bdb5a0d59c8"
       define_method(:install) do
         bin.install "ghapp"
         bin.install "ghapp-gh"
@@ -39,7 +39,7 @@ class Ghapp < Formula
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/operator-kit/ghapp-cli/releases/download/v0.1.1/ghapp_0.1.1_linux_arm64.tar.gz"
-      sha256 "795e227b03e6853a6b4cb530b6a0d998027d77aa64a55e4830b75d4f6fbdc5a6"
+      sha256 "ac21f6c1b1c22904c21f9bda8f305258c3872b08b8c3c469d1485b9e2b534881"
       define_method(:install) do
         bin.install "ghapp"
         bin.install "ghapp-gh"
