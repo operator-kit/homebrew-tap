@@ -5,12 +5,12 @@
 class Ghapp < Formula
   desc "GitHub App authentication for git and gh"
   homepage "https://github.com/operator-kit/ghapp-cli"
-  version "0.1.0"
+  version "0.1.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/operator-kit/ghapp-cli/releases/download/v0.1.0/ghapp_0.1.0_darwin_amd64.tar.gz"
-      sha256 "8cf62029b3dcc2512fe0f80c4a3b29d228ed59e10bfba2bbbdbb3d7fbe1b6bba"
+      url "https://github.com/operator-kit/ghapp-cli/releases/download/v0.1.1/ghapp_0.1.1_darwin_amd64.tar.gz"
+      sha256 "1a60d830bc1c430a8ca7e91ed8ecf5493f053ca7524023ef8cf020cb8335170e"
 
       define_method(:install) do
         bin.install "ghapp"
@@ -18,8 +18,8 @@ class Ghapp < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/operator-kit/ghapp-cli/releases/download/v0.1.0/ghapp_0.1.0_darwin_arm64.tar.gz"
-      sha256 "239b70255cedacae6cad813f5f67893809ac9727117ef479861c4e2e0b099678"
+      url "https://github.com/operator-kit/ghapp-cli/releases/download/v0.1.1/ghapp_0.1.1_darwin_arm64.tar.gz"
+      sha256 "c6ff2a80c9b477cc910e842d855b64245a23f5fa36fab7e26d785ccb1680034c"
 
       define_method(:install) do
         bin.install "ghapp"
@@ -30,16 +30,16 @@ class Ghapp < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/operator-kit/ghapp-cli/releases/download/v0.1.0/ghapp_0.1.0_linux_amd64.tar.gz"
-      sha256 "e7c921d1230e527eb43fbfc503a719a14f6d93b2679c5e69b8f3847b91b0a745"
+      url "https://github.com/operator-kit/ghapp-cli/releases/download/v0.1.1/ghapp_0.1.1_linux_amd64.tar.gz"
+      sha256 "b4bb540bed6a8814a8c43c16cf614c2675067fc94fe2f7ef08c1a654e4c00514"
       define_method(:install) do
         bin.install "ghapp"
         bin.install "ghapp-gh"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/operator-kit/ghapp-cli/releases/download/v0.1.0/ghapp_0.1.0_linux_arm64.tar.gz"
-      sha256 "01fc73778e976db26e276bdc60010050c714f097e7d3806700644e66103de593"
+      url "https://github.com/operator-kit/ghapp-cli/releases/download/v0.1.1/ghapp_0.1.1_linux_arm64.tar.gz"
+      sha256 "795e227b03e6853a6b4cb530b6a0d998027d77aa64a55e4830b75d4f6fbdc5a6"
       define_method(:install) do
         bin.install "ghapp"
         bin.install "ghapp-gh"
