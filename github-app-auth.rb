@@ -5,12 +5,12 @@
 class GithubAppAuth < Formula
   desc "GitHub App authentication for git and gh"
   homepage "https://github.com/operator-kit/github-app-auth"
-  version "0.1.1"
+  version "0.1.2"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/operator-kit/github-app-auth/releases/download/v0.1.1/github-app-auth_0.1.1_darwin_amd64.tar.gz"
-      sha256 "f759c7724dcaaa4d723b7a301bb9cbe0f7a5586faf8f75bc7a0e38b424485697"
+      url "https://github.com/operator-kit/github-app-auth/releases/download/v0.1.2/github-app-auth_0.1.2_darwin_amd64.tar.gz"
+      sha256 "f13fbd4b8566128ac955aebcf5cffbf6dc3f79c5d1cf27ac61b0347eef919850"
 
       define_method(:install) do
         bin.install "ghapp"
@@ -18,8 +18,8 @@ class GithubAppAuth < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/operator-kit/github-app-auth/releases/download/v0.1.1/github-app-auth_0.1.1_darwin_arm64.tar.gz"
-      sha256 "1a310a287fbd5fe2c9b4eeb061b85f50ef7929bc66c33c6d1dbf7587b35b22b5"
+      url "https://github.com/operator-kit/github-app-auth/releases/download/v0.1.2/github-app-auth_0.1.2_darwin_arm64.tar.gz"
+      sha256 "3b3a248db78ec6c6d56df080bdb1a3b609dd4d06609374325af90e9b1d9f4c5b"
 
       define_method(:install) do
         bin.install "ghapp"
@@ -30,16 +30,16 @@ class GithubAppAuth < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/operator-kit/github-app-auth/releases/download/v0.1.1/github-app-auth_0.1.1_linux_amd64.tar.gz"
-      sha256 "0ba16296e34092bc0627e992608dca529dbca3cdbff1ddc1a03d72b3b599fe4f"
+      url "https://github.com/operator-kit/github-app-auth/releases/download/v0.1.2/github-app-auth_0.1.2_linux_amd64.tar.gz"
+      sha256 "cb5139f8a1cdd1b5922cd9ffd89c7e5211dd4a1ae780afb7c3f03725f6c74aed"
       define_method(:install) do
         bin.install "ghapp"
         bin.install "ghapp-gh"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/operator-kit/github-app-auth/releases/download/v0.1.1/github-app-auth_0.1.1_linux_arm64.tar.gz"
-      sha256 "2ae03faa9884befc8b41439a339fe4aab0fca12a449e3ab190a544d908d0ce60"
+      url "https://github.com/operator-kit/github-app-auth/releases/download/v0.1.2/github-app-auth_0.1.2_linux_arm64.tar.gz"
+      sha256 "1b711fcc2ae1304b4d4a0063883a6a50226cf7d696239b30151f4018efab57d6"
       define_method(:install) do
         bin.install "ghapp"
         bin.install "ghapp-gh"
