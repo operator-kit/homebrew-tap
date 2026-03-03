@@ -10,7 +10,7 @@ class Hs < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/operator-kit/hs-cli/releases/download/v0.1.0/hs_0.1.0_darwin_amd64.tar.gz"
-      sha256 "8fcdee09fab3509dbbf859ad1b76b0dc9e5bcf2f01c6a587ad832c7f4ae46f17"
+      sha256 "e9878b93b6c1407ff65aa30f30307ad98ec40aaa4397765995800754eea15194"
 
       define_method(:install) do
         bin.install "hs"
@@ -18,7 +18,7 @@ class Hs < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/operator-kit/hs-cli/releases/download/v0.1.0/hs_0.1.0_darwin_arm64.tar.gz"
-      sha256 "2f0b8991bf072342fc0d15ae1ad0b8a514b442f6de0cd96d4f9d190ccedd4f1d"
+      sha256 "45b0f9938871d0cfaaa674e6a2ab191ebc874e69f960a2fa135ce9e8d80277ad"
 
       define_method(:install) do
         bin.install "hs"
@@ -29,14 +29,14 @@ class Hs < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/operator-kit/hs-cli/releases/download/v0.1.0/hs_0.1.0_linux_amd64.tar.gz"
-      sha256 "dcbe6c1df2430769566c8a807d6dc4b1a6547dac192ed2e93c9d6a350d453219"
+      sha256 "741775255c8db4909b4f87d817441d2bcf19a3337899ca4449cd97bec05668ff"
       define_method(:install) do
         bin.install "hs"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/operator-kit/hs-cli/releases/download/v0.1.0/hs_0.1.0_linux_arm64.tar.gz"
-      sha256 "01cb62636123eb30ab3a0b2ad77e7682b753ba8ca1ad9a1fb624cbabf24b91c3"
+      sha256 "bc63b9cda8a6dae8a28ffbefaa2b6edf4623851df5d02097e33ed46b116157a6"
       define_method(:install) do
         bin.install "hs"
       end
