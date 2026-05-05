@@ -5,20 +5,20 @@
 class Hs < Formula
   desc "HelpScout CLI — manage mailboxes, conversations, customers and more"
   homepage "https://github.com/operator-kit/hs-cli"
-  version "0.2.1"
+  version "0.2.2"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/operator-kit/hs-cli/releases/download/v0.2.1/hs_0.2.1_darwin_amd64.tar.gz"
-      sha256 "0e2937d6c4b48fc68889f8213ab36d85ef7042e13aca8e177e66f83b209cac8d"
+      url "https://github.com/operator-kit/hs-cli/releases/download/v0.2.2/hs_0.2.2_darwin_amd64.tar.gz"
+      sha256 "560cd1f66ddc07fd941eae195a20dbe96c313342ad30fdda4565450ca52dc478"
 
       define_method(:install) do
         bin.install "hs"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/operator-kit/hs-cli/releases/download/v0.2.1/hs_0.2.1_darwin_arm64.tar.gz"
-      sha256 "df161f5efc267c704b81629e5f03c00999f2c6634c5e5f8b2af592bde5d4835c"
+      url "https://github.com/operator-kit/hs-cli/releases/download/v0.2.2/hs_0.2.2_darwin_arm64.tar.gz"
+      sha256 "c1c9eeb9dcffc710c58e2fa27f7cd56c990f64bd12bfdd707e93789f7e24f8ee"
 
       define_method(:install) do
         bin.install "hs"
@@ -28,15 +28,15 @@ class Hs < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/operator-kit/hs-cli/releases/download/v0.2.1/hs_0.2.1_linux_amd64.tar.gz"
-      sha256 "0896b954f5346818f43ba55dc94e3aa9c80bbb7fd2cb3cbb21e7cbfe4ad50f22"
+      url "https://github.com/operator-kit/hs-cli/releases/download/v0.2.2/hs_0.2.2_linux_amd64.tar.gz"
+      sha256 "f6595fe2de39932c02f57e18586f6c61ca3754e4d2ef3159938f0496983e9f21"
       define_method(:install) do
         bin.install "hs"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/operator-kit/hs-cli/releases/download/v0.2.1/hs_0.2.1_linux_arm64.tar.gz"
-      sha256 "9f10a5f270220f794334863a4a197cfd35c58640cb2aefeb872178ca93b16bff"
+      url "https://github.com/operator-kit/hs-cli/releases/download/v0.2.2/hs_0.2.2_linux_arm64.tar.gz"
+      sha256 "42d45f24a5092d7086b9f616d49583df55f0aa075e857131259a83f6dc8b0675"
       define_method(:install) do
         bin.install "hs"
       end
